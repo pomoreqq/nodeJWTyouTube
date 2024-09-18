@@ -1,0 +1,10 @@
+POST http://localhost:4000/users
+Content-Type: application/json
+
+
+{
+    "user_name": "essa",
+    "user_email": "essa@wp.pl",
+    "user_password": "essa"
+    
+}
