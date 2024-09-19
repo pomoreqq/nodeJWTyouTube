@@ -4,7 +4,31 @@ Content-Type: application/json
 
 {
     "user_name": "essa",
-    "user_email": "essa@wp.pl",
+    "user_email": "essaa@wp.pl",
     "user_password": "essa"
     
 }
+
+
+
+###
+POST http://localhost:4000/auth/login
+Content-Type:  application/json
+
+{
+    "user_email": "essa@wp.pl",
+    "user_password": "essa"
+}
+
+
+###
+GET http://localhost:4000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNDc2YmVmN2UtNTE5OS00ZTk4LTgzNGItMTUxNjljYzQzYmJhIiwidXNlcl9uYW1lIjoiZXNzYSIsInVzZXJfZW1haWwiOiJlc3NhQHdwLnBsIiwiaWF0IjoxNzI2NzYzNTY1LCJleHAiOjE3MjY3NjM1ODV9.IZczYeoyVZwWgcvIaAxwy-gdJWJHigpx9qvjbUVA6tw
+
+
+###
+GET http://localhost:4000/auth/refresh
+
+
+###
+DELETE http://localhost:4000/auth/refresh
